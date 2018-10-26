@@ -176,7 +176,8 @@ def cnn_rnn_model_dro(input_dim, filters, kernel_size, conv_stride,
 
 def deep_bidirectional(input_data, units=200, recur_layers=4, dropout_rate=0.2, activation='relu'):
     """ Build a deep bidirectional recurrent network with dropout for speech
-        This is taken from Miguel Angel Nieto's implementation of this paper(https://arxiv.org/pdf/1312.6026.pdf), because    there was simply no better way to do this. Find his repo here:https://github.com/miguelangelnieto/DNN-Speech-Recognizer 
+        This is taken from Miguel Angel Nieto's implementation of this paper(https://arxiv.org/pdf/1312.6026.pdf), 
+        because there was simply no better way to do this. Find his repo here:https://github.com/miguelangelnieto/DNN-Speech-Recognizer 
     """
     out = None
     for i in range(recur_layers):
